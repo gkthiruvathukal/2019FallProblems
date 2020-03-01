@@ -1,0 +1,10 @@
+language: c
+addons:
+    apt:
+        packages:
+        - build-essential
+        - cmake
+
+script:
+  - make -C Part1/HW01Linux && make -C Part1/HW01Linux testall
+
