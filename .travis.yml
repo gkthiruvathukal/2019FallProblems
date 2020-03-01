@@ -4,11 +4,14 @@ addons:
         packages:
         - build-essential
 
+env:
+    - TEST1="yes"
 # Uncomment script lines you wish to run (except true line, if the only line)
 
 script:
   - true
-  - make -C Part1/HW01Linux && make -C Part1/HW01Linux testall
+  - if [[  "$TEST1" == "yes" ]]; then make -C Part1/HW01Linux && make -C Part1/HW01Linux testall; fi
+# - make -C Part1/HW01Linux && make -C Part1/HW01Linux testall
 # - make -C Part1/HW02Sort && make -C Part1/HW02Sort testall
 
 # - make -C Part1/HW03Cake && make -C Part1/HW03Cake testall
