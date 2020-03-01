@@ -5,13 +5,13 @@ addons:
         - build-essential
 
 env:
-    - TEST1="yes"
+    - TEST1="yes" TEST2="no"
 # Uncomment script lines you wish to run (except true line, if the only line)
 
 script:
   - true
   - if [[  "$TEST1" == "yes" ]]; then make -C Part1/HW01Linux && make -C Part1/HW01Linux testall; fi
-# - make -C Part1/HW01Linux && make -C Part1/HW01Linux testall
+  - if [[  "$TEST2" == "yes" ]]; then make -C Part1/HW02Sort && make -C Part1/HW02Sort testall; fi
 # - make -C Part1/HW02Sort && make -C Part1/HW02Sort testall
 
 # - make -C Part1/HW03Cake && make -C Part1/HW03Cake testall
