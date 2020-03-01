@@ -9,7 +9,7 @@ env:
 
 script:
   - if [ "RUN_HW01LINUX" == "yes" ]; then
-      make -C Part1/HW01Linux main && make -C Part1/HW01Linux testall)
+      make -C Part1/HW01Linux main && make -C Part1/HW01Linux testall
     else
       echo "Skipping HW01Linux (success)"
     fi
