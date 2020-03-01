@@ -3,6 +3,9 @@ addons:
     apt:
         packages:
         - build-essential
+
+# Uncomment script lines you wish to run     
 script:
   - make -C Part1/HW01Linux main && make -C Part1/HW01Linux testall
-  - make -C Part2/HW07QSort sort && make -C Part2/HW07QSort testall
+#  - make -C Part2/HW07QSort sort && make -C Part2/HW07QSort testall
+
