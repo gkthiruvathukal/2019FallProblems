@@ -4,8 +4,20 @@ addons:
         packages:
         - build-essential
 
-# Uncomment script lines you wish to run     
+# Uncomment script lines you wish to run (except true line, if the only line)
+
 script:
-  - make -C Part1/HW01Linux main && make -C Part1/HW01Linux testall
-#  - make -C Part2/HW07QSort sort && make -C Part2/HW07QSort testall
+  - true
+  - make -C Part1/HW01Linux && make -C Part1/HW01Linux testall
+# - make -C Part1/HW02Sort && make -C Part1/HW02Sort testall
+
+# - make -C Part1/HW03Cake && make -C Part1/HW03Cake testall
+
+# - make -C Part1/HW04File && make -C Part1/HW04File testall
+
+# - make -C Part1/HW05Sum && make -C Part1/HW05Sum testall
+
+# - make -C Part1/HW06Word && make -C Part1/HW06Word testall
+# - make -C Part2/HW07QSort && make -C Part2/HW07QSort testall
+# - make -C ./Part3/HW16BinaryTree2 && make -C ./Part3/HW16BinaryTree2 testall
 
