@@ -7,9 +7,11 @@ env:
   - RUN_HW01LINUX="yes" RUN_HW07QSORT="no"
 
 script:
-  - if [ "RUN_HW01LINUX" = "yes" ]; then
-      make -C Part1/HW01Linux main && make -C Part1/HW01Linux testall
-    fi
-  - if [ "RUN_HW07QSORT" = "yes" ]; then
-      make -C Part2/HW07QSort sort && make -C Part2/HW07QSort testall
-    fi
+  - >
+    if [ "RUN_HW01LINUX" = "yes" ]; then
+      make -C Part1/HW01Linux main && make -C Part1/HW01Linux testall;
+    fi;
+  - >
+    if [ "RUN_HW07QSORT" = "yes" ]; then
+      make -C Part2/HW07QSort sort && make -C Part2/HW07QSort testall;
+    fi;
