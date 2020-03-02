@@ -20,23 +20,24 @@ The problems are classified into four parts:
 Tentative Schedule
 ==================
 
-|Week | Monday | Tuesday | Wednesday | Thursday | Friday |
-|-----|--------|---------|-----------|----------|--------|
-| 01  |        |         |           |          |  01    |
-| 02  |        |         |    02     |          |  03    |
-| 03  |  04    |         |    05     |          |  06    |
-| 04  |        |         |           |   07     |        |
-| 05  |        |         |    08     |          |        |
-| 06  |        |   09    |           |          |        |
-| 07  |  10    |         |           |          |  11    |
-| 08  |        |         |           |   12     |        |
-| 09  |        |         |           |   13     |        |
-| 10  |        |         |   14      |          |        |
-| 11  |        |  15     |           |   14     |        |
-| 12  | 16     |         |           |          |   17   |
-| 13  |        |         |           |   18     |        |
-| 14  |        |         |   19      |          |        |
-| 15  |        |         |           |          |   20   |
+|Week | Monday | Tuesday | Wednesday | Thursday | Friday     |
+|-----|--------|---------|-----------|----------|------------|
+| 01  |        |         |           |          |  01        |
+| 02  |        |         |    02     |          |            |
+| 03  |        |   03    |           |          |            |
+| 04  |  04    |         |           |          |  05        |
+| 05  |        |         |    06     |          |            |
+| 06  |  07    |         |           |          |  08        |
+| 07  |        |         |           |   09     |            |
+| 08  |        |         |   10      |          |            |
+| 09  |        |   11    |           |          |            |
+| 10  |  12    |         |           |          |   13       |
+| 11  |        |         |           |   14     |            |
+| 12  |        |         |   15      |          |            |
+| 13  |        |   16    |           |          |            |
+| 14  |  17    |         |           |          |            |
+| 15  |        Thanksgiving                                  |
+| 16  |        |  18     |           |          | 19 (bonus) |
 
 Part 1 Basic
 ============
@@ -65,11 +66,15 @@ Part 3 Dynamic Structure
 * HW12Cake2: Who gets the cake? Use linked list.
 * HW13Arithmetic1: Perform arithmetic calculation using postfix expression.
 * HW14Arithmetic2: Convert an infix expression to postfix.
-* HW15
+* HW15BinaryTree1: Build a binary tree from in-order and post-order
+* HW16BinaryTree2: Print the path from a node to the root
 
 Part 4 Applications
 ===================
 
+* HW17Maze: find the shortest distances between the source to all reachable locations
+* HW18Memory: allocate and free memory blocks and bit operations
+* HW19Sudoku (bonus): solve Sudoku problems
 
 
 How are Programming Assignments Graded?

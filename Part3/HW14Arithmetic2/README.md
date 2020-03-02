@@ -1,5 +1,8 @@
 # Convert Infix Expression to Postfix Expression
 
+You should be able to reuse `list.c` and `list.h` from HW13. 
+If your `list.c` was incorrect, this assignment gives you a chance to obtain scores if your `list.c` is correct for HW14.
+
 Learning Goals
 ==============
 
@@ -286,7 +289,3 @@ zip hw14.zip list.c convert.c
 ```
 
 Upload hw14.zip to Blackboard.
-
-You should be able to reuse `list.c` from HW13. If your `list.c` was
-incorrect, this assignment gives you a chance to obtain scores if your
-`list.c` is correct for HW14.

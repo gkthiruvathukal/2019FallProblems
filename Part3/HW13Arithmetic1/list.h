@@ -5,9 +5,9 @@
 #ifndef LIST_H
 #define LIST_H
 
-#define WORDLENGTH 5
-// assume each numbers use at most 4 digits
-// the fifth character stores '\0'
+#define WORDLENGTH 10
+// assume each numbers use at most 9 digits
+// the tenth character stores '\0'
 
 #include <stdbool.h>
 

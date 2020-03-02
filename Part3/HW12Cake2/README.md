@@ -40,6 +40,15 @@ behavior of your program may take several hours to debug. It is unwise
 to save half a nanosecond of machine time and spend several hours of
 your personal time.
 
+Printing ListNode
+===================
+
+You should call `printListNode` each time BEFORE you delete any node 
+and print the node value. In the expected files, `printListNode` is not
+called for the last value in the list. Follow the 
+expected files format. You can turn on the DEBUG flag in your Makefile
+for printing.
+
 Submission
 ==========
 
