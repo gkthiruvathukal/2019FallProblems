@@ -4,23 +4,14 @@ addons:
         packages:
         - build-essential
 
+# Note: The formatting below is NOT required. It is intentional so you can configure which tests to run, visually.
+# THe arrays DIRS and TEST are in 1-1 correspondence
 env:
-    - TEST1="yes" TEST2="no"
-# Uncomment script lines you wish to run (except true line, if the only line)
+    - DIRS=(Part1/HW01Linux Part1/HW02Sort Part1/HW03Cake Part1/HW04File Part1/HW05Sum Part1/HW06Word Part2/HW07QSort Part3/HW16BinaryTree2)
+    - TEST=(yes             no             no             no             no            no             no              no)
+
 
 script:
+  - for((i=0;i<${#DIRS[@]};i++)); do if [[ "${TEST[$i]}" == "yes" ]]; then make -C "${DIRS[$i]}" && make -C "${DIRS[$i]}" testall; fi; done
   - true
-  - if [[  "$TEST1" == "yes" ]]; then make -C Part1/HW01Linux && make -C Part1/HW01Linux testall; fi
-  - if [[  "$TEST2" == "yes" ]]; then make -C Part1/HW02Sort && make -C Part1/HW02Sort testall; fi
-# - make -C Part1/HW02Sort && make -C Part1/HW02Sort testall
-
-# - make -C Part1/HW03Cake && make -C Part1/HW03Cake testall
-
-# - make -C Part1/HW04File && make -C Part1/HW04File testall
-
-# - make -C Part1/HW05Sum && make -C Part1/HW05Sum testall
-
-# - make -C Part1/HW06Word && make -C Part1/HW06Word testall
-# - make -C Part2/HW07QSort && make -C Part2/HW07QSort testall
-# - make -C ./Part3/HW16BinaryTree2 && make -C ./Part3/HW16BinaryTree2 testall
 
