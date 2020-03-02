@@ -11,6 +11,9 @@ script:
       for((i=0;i<${#DIRS[@]};i++));
         do
            if [[ "${TEST[$i]}" == "yes" ]]; then
+              echo "Running Test $i in directory ${DIRS[$i]} (yes)";
               make -C "${DIRS[$i]}" && make -C "${DIRS[$i]}" testall;
+           else
+              echo "Not Running Test $i in directory ${DIRS[$i]} (not yes)";
            fi;
         done;
